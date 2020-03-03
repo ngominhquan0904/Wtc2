@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using devopsAspNetcore.Models;
+using Shared.Dto;
 
 namespace devopsAspNetcore.Controllers
 {
@@ -17,6 +18,7 @@ namespace devopsAspNetcore.Controllers
 
         public IActionResult About()
         {
+            var group = new GroupDto();
             ViewData["Message"] = "Your application description page.";
 
             return View();

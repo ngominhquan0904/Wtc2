@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.2</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.1</Version>
-    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
     <RepositoryUrl>https://github.com/ngominhquan0904/Wtc2</RepositoryUrl>
     <PackageProjectUrl>https://github.com/ngominhquan0904/Wtc2</PackageProjectUrl>
     <Authors>Quan Ngo</Authors>
@@ -12,5 +12,9 @@
     <Product>Erp</Product>
     <Description>Shared Dtos across the modules</Description>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="UniSoft.Shared.Dto" Version="1.0.17" />
+  </ItemGroup>
 
 </Project>

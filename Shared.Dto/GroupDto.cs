@@ -1,11 +1,10 @@
 ﻿using System;
+using UniSoft.Shared.Dto.MenuModule.Compartment.Response;
 
 namespace Shared.Dto
 {
-    public class GroupDto
+    public class GroupDto : CompartmentDto
     {
-        public int Id { get; set; }
-        public string Title { get; set; }
         public string Description { get; set; }
     }
 }

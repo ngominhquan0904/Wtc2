@@ -1,0 +1,7 @@
+D:\Projects\Collection\Devops\azure\github\Wtc2\Shared.Dto\bin\Debug\netstandard1.2\Shared.Dto.deps.json
+D:\Projects\Collection\Devops\azure\github\Wtc2\Shared.Dto\bin\Debug\netstandard1.2\Shared.Dto.dll
+D:\Projects\Collection\Devops\azure\github\Wtc2\Shared.Dto\bin\Debug\netstandard1.2\Shared.Dto.pdb
+D:\Projects\Collection\Devops\azure\github\Wtc2\Shared.Dto\obj\Debug\netstandard1.2\Shared.Dto.AssemblyInfoInputs.cache
+D:\Projects\Collection\Devops\azure\github\Wtc2\Shared.Dto\obj\Debug\netstandard1.2\Shared.Dto.AssemblyInfo.cs
+D:\Projects\Collection\Devops\azure\github\Wtc2\Shared.Dto\obj\Debug\netstandard1.2\Shared.Dto.dll
+D:\Projects\Collection\Devops\azure\github\Wtc2\Shared.Dto\obj\Debug\netstandard1.2\Shared.Dto.pdb

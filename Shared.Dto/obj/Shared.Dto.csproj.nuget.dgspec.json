@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Collection\\Devops\\azure\\github\\Wtc2\\devopsAspNetcore\\devopsAspNetcore.csproj": {}
+    "D:\\Projects\\Collection\\Devops\\azure\\github\\Wtc2\\Shared.Dto\\Shared.Dto.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Collection\\Devops\\azure\\github\\Wtc2\\devopsAspNetcore\\devopsAspNetcore.csproj": {
+    "D:\\Projects\\Collection\\Devops\\azure\\github\\Wtc2\\Shared.Dto\\Shared.Dto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Collection\\Devops\\azure\\github\\Wtc2\\devopsAspNetcore\\devopsAspNetcore.csproj",
-        "projectName": "devopsAspNetcore",
-        "projectPath": "D:\\Projects\\Collection\\Devops\\azure\\github\\Wtc2\\devopsAspNetcore\\devopsAspNetcore.csproj",
+        "projectUniqueName": "D:\\Projects\\Collection\\Devops\\azure\\github\\Wtc2\\Shared.Dto\\Shared.Dto.csproj",
+        "projectName": "Shared.Dto",
+        "projectPath": "D:\\Projects\\Collection\\Devops\\azure\\github\\Wtc2\\Shared.Dto\\Shared.Dto.csproj",
         "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Collection\\Devops\\azure\\github\\Wtc2\\devopsAspNetcore\\obj\\",
+        "outputPath": "D:\\Projects\\Collection\\Devops\\azure\\github\\Wtc2\\Shared.Dto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -23,7 +23,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netstandard1.2"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -32,7 +32,7 @@
           "https://nuget.pkg.github.com/NetSetUp/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
+          "netstandard1.2": {
             "projectReferences": {}
           }
         },
@@ -43,36 +43,14 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
+        "netstandard1.2": {
           "dependencies": {
-            "Microsoft.AspNetCore.App": {
-              "suppressParent": "All",
+            "NETStandard.Library": {
               "target": "Package",
-              "version": "[2.1.1, )",
-              "autoReferenced": true
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.0, )",
+              "version": "[1.6.1, )",
               "autoReferenced": true
             }
           },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }

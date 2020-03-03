@@ -11807,11 +11807,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Collection\\Devops\\azure\\devopsdemo\\devopsAspNetcore\\devopsAspNetcore\\devopsAspNetcore.csproj",
+      "projectUniqueName": "D:\\Projects\\Collection\\Devops\\azure\\github\\Wtc2\\devopsAspNetcore\\devopsAspNetcore.csproj",
       "projectName": "devopsAspNetcore",
-      "projectPath": "D:\\Projects\\Collection\\Devops\\azure\\devopsdemo\\devopsAspNetcore\\devopsAspNetcore\\devopsAspNetcore.csproj",
+      "projectPath": "D:\\Projects\\Collection\\Devops\\azure\\github\\Wtc2\\devopsAspNetcore\\devopsAspNetcore.csproj",
       "packagesPath": "C:\\Users\\dell\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Collection\\Devops\\azure\\devopsdemo\\devopsAspNetcore\\devopsAspNetcore\\obj\\",
+      "outputPath": "D:\\Projects\\Collection\\Devops\\azure\\github\\Wtc2\\devopsAspNetcore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

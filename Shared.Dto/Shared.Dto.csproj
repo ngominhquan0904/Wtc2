@@ -13,8 +13,4 @@
     <Description>Shared Dtos across the modules</Description>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="UniSoft.Shared.Dto" Version="1.0.17" />
-  </ItemGroup>
-
 </Project>

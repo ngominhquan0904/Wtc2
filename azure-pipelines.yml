@@ -1,28 +1,25 @@
-trigger:
-- master
-​
 pool:
   name: Azure Pipelines
   vmImage: 'ubuntu-latest'
-​
+
 variables:
   configuration: 'Release'
   projectPath: 'Shared.Dto/Shared.Dto.csproj'
-​
+
 steps:
 - task: UseDotNet@2
   displayName: 'Install .NET Core SDK'
   inputs:
     packageType: 'sdk'
     version: '2.x'
-​
+
 - task: DotNetCoreCLI@2
   displayName: 'Build the project'
   inputs:
     command: 'build'
     configuration: $(configuration)
     projects: $(projectPath)
-​
+
 - task: DotNetCoreCLI@2
   displayName: 'Pack the package'
   inputs:
@@ -30,7 +27,7 @@ steps:
     configuration: $(configuration)
     packagesToPack: $(projectPath)
     nobuild: true
-​
+
 - task: PublishBuildArtifacts@1
   displayName: 'Publish the package'
   inputs:

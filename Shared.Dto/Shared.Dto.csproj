@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.2</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.4</Version>
-    <AssemblyVersion>1.0.0.4</AssemblyVersion>
+    <Version>1.0.5</Version>
+    <AssemblyVersion>1.0.0.5</AssemblyVersion>
     <RepositoryUrl>https://github.com/ngominhquan0904/Wtc2</RepositoryUrl>
     <PackageProjectUrl>https://github.com/ngominhquan0904/Wtc2</PackageProjectUrl>
     <Authors>Quan Ngo</Authors>

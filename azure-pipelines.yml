@@ -1,34 +1,43 @@
+trigger:
+- master
+​
 pool:
   name: Azure Pipelines
   vmImage: 'ubuntu-latest'
-#Your build pipeline references the ‘BuildConfiguration’ variable, which you’ve selected to be settable at queue time. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it settable at queue time. See https://go.microsoft.com/fwlink/?linkid=865971
-
+​
+variables:
+  configuration: 'Release'
+  projectPath: 'Shared.Dto/Shared.Dto.csproj'
+​
 steps:
-- task: DotNetCoreCLI@2
-  displayName: restore
+- task: UseDotNet@2
+  displayName: 'Install .NET Core SDK'
   inputs:
-    command: restore
-    projects: '**/*.csproj'
-
+    packageType: 'sdk'
+    version: '2.x'
+​
 - task: DotNetCoreCLI@2
-  displayName: Build
+  displayName: 'Build the project'
   inputs:
-    projects: Shared.Dto/Shared.Dto.csproj
-    arguments: '--configuration $(BuildConfiguration)'
-
+    command: 'build'
+    configuration: $(configuration)
+    projects: $(projectPath)
+​
 - task: DotNetCoreCLI@2
-  displayName: 'pack package'
+  displayName: 'Pack the package'
   inputs:
-    command: pack
-    packagesToPack: Shared.Dto/Shared.Dto.csproj
+    command: 'pack'
+    configuration: $(configuration)
+    packagesToPack: $(projectPath)
     nobuild: true
-
+​
 - task: PublishBuildArtifacts@1
   displayName: 'Publish the package'
   inputs:
-    PathtoPublish: '$(build.artifactstagingdirectory)'
-  condition: succeededOrFailed()
-
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
+    
 - task: NuGetCommand@2
   displayName: 'NuGet push'
   inputs:
@@ -36,4 +45,3 @@ steps:
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg'
     nuGetFeedType: external
     publishFeedCredentials: 'Github Package hub'
-

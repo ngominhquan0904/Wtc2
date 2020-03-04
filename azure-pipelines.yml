@@ -21,7 +21,7 @@ steps:
   inputs:
     command: pack
     packagesToPack: Shared.Dto/Shared.Dto.csproj
-    nobuild: true
+    nobuild: false
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish the package'

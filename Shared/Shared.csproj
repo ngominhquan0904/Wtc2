@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.2</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <RepositoryUrl>https://github.com/ngominhquan0904/Wtc2</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/ngominhquan0904/Wtc2</PackageProjectUrl>
+    <Authors>Quan Ngo</Authors>
+    <Company>Erp</Company>
+    <Product>Erp</Product>
+    <Description>Shared across the modules</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Shared.Dto" Version="1.0.8" />
+  </ItemGroup>
+
+</Project>

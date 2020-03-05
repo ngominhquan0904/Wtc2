@@ -35,11 +35,3 @@ steps:
     ArtifactName: 'drop'
     publishLocation: 'Container'
     
-- task: NuGetCommand@2
-  displayName: 'NuGet push'
-  inputs:
-    command: push
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg'
-    nuGetFeedType: external
-    publishFeedCredentials: 'Github Package hub'
-    allowPackageConflicts: true

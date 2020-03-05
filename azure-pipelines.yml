@@ -42,3 +42,4 @@ steps:
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg'
     nuGetFeedType: external
     publishFeedCredentials: 'Github Package hub'
+    allowPackageConflicts: true
